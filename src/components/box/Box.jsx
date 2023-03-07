@@ -8,6 +8,7 @@ import {
   border,
   boxShadow,
 } from 'styled-system';
+
 export const Box = styled('div')(
   color,
   space,
