@@ -1,5 +1,6 @@
 import { Box } from '../box/Box';
 import { Buttons } from './Options.styled';
+import PropTypes from 'prop-types';
 
 export const Feedback = ({ onFeedback, options }) => {
   return (
@@ -19,4 +20,9 @@ export const Feedback = ({ onFeedback, options }) => {
       ))}
     </Box>
   );
+};
+
+Feedback.propTypes = {
+  onFeedback: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
