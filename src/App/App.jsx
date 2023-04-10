@@ -27,8 +27,7 @@ export const App = () => {
 				break;
 		}
 	};
-
-	const handleTotal = () => good + neutral + bad;
+const handleTotal = () => good + neutral + bad;
 	const handlePositive = () => {
 		return Math.round((good / handleTotal()) * 100);
 	};
@@ -60,3 +59,4 @@ export const App = () => {
 		</Container>
 	);
 };
+	
